@@ -30,7 +30,7 @@ export default function Home() {
           PrepAI · Behavioral
         </h1>
         <p className="mt-1.5 text-[13.5px] leading-relaxed text-ink-soft">
-          This is the student scaffold — Next.js 15, TypeScript, Tailwind, and
+          This is the scaffold — Next.js 15, TypeScript, Tailwind, and
           design tokens. Question bank, microphone, scoring, and dashboard come
           in later stories.
         </p>
