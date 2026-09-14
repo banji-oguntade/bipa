@@ -12,7 +12,13 @@ const navItems = [
     href: "/practice",
     label: "Practice",
     icon: MessagesSquare,
-  }
+  },
+  {
+    href: "/aboutus",
+    label: "About Us",
+    icon: LayoutDashboard,
+  },
+
 ] as const;
 
 type AppHeaderProps = {
