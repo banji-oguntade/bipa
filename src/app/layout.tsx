@@ -9,12 +9,12 @@ import "@fontsource/inter/700.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "@fontsource/ibm-plex-mono/500.css";
 import "@fontsource/ibm-plex-mono/600.css";
+import { AppShell } from "@/components/app-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "PrepAI · Behavioral",
-  description:
-    "Student scaffold for behavioral interview practice. Tokens and app shell only.",
+  description: "Practice behavioral interviews and build stronger answers.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <AppShell>{children}</AppShell>
+      </body>
     </html>
   );
 }
