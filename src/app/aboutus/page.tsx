@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ScoreLabel } from "@/components/score-label";
+import { SignalBar } from "@/components/signal-bar";
 
 const steps = [
   {
@@ -52,6 +54,25 @@ export default function AboutUsPage() {
           >
             Explore dashboard
           </Link>
+        </div>
+
+        <div className="mt-10 rounded-lg border border-border bg-surface p-5 shadow-sm sm:p-7">
+          <div className="grid gap-5 sm:grid-cols-[160px_1fr] sm:items-center">
+            <div>
+              <p className="font-display text-[56px] leading-none font-bold tracking-tight text-ink sm:text-[64px]">
+                82
+              </p>
+              <ScoreLabel score={82} className="mt-3" />
+            </div>
+            <div className="min-w-0">
+              <SignalBar score={82} segments={28} className="mb-4" />
+              <p className="max-w-[680px] text-base leading-7 text-ink-soft">
+                Well-structured story with a clear payoff. Naming your specific
+                role earlier, and closing with a measurable result, would make
+                this interview-ready.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
